@@ -1,4 +1,4 @@
-function randn_bm() {
+function randomGauss() {
   let u = 0,
     v = 0;
   while (u === 0) u = Math.random();
@@ -8,7 +8,7 @@ function randn_bm() {
 
 const range = [];
 for (let i = 0; i < 100; i++) {
-  range[i] = randn_bm();
+  range[i] = randomGauss();
 }
 
 const res = range.reduce((acc, curr) => {
